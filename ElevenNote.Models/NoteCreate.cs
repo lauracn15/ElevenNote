@@ -16,6 +16,8 @@ namespace ElevenNote.Models
 
         [MaxLength(8000)]
         public string Content { get; set; }
+        public Guid OwnerId { get; internal set; }
+        public DateTimeOffset CreatedUtc { get; internal set; }
 
         public override string ToString() => Title;
   
